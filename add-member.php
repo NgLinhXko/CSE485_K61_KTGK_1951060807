@@ -74,7 +74,7 @@ if (isset($_POST['btnSave'])) {
         header("location:" . 'http://localhost:8080/CSE485_K61_KTGH_1951060807/CSE485_K61_KTGK_1951060807/manage-member.php');
         die();
     } else {
-        $_SESSION['add-member'] = "<div class='error'>Failed to Add Member.</div>";
+        $_SESSION['error'] = "<div class='error'>Failed to Add Member.</div>";
         header("location:" . 'http://localhost:8080/CSE485_K61_KTGH_1951060807/CSE485_K61_KTGK_1951060807/error.php');
     }
 }

@@ -15,6 +15,10 @@
             echo $_SESSION['update'];
             unset($_SESSION['update']);
         }
+        if (isset($_SESSION['error'])) {
+            echo $_SESSION['error'];
+            unset($_SESSION['error']);
+        }
         ?>
         <br>
         <br>

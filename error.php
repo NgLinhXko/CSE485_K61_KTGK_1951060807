@@ -8,7 +8,14 @@
 </head>
 
 <body>
-    <h1>Fail!!!!</h1>
+    <?php
+    if (isset($_SESSION['error'])) {
+        echo $_SESSION['error'];
+        unset($_SESSION['error']);
+    }
+
+    ?>
+    <a href="manage-member.php">Trở Về Trang Chủ</a>
 </body>
 
 </html>

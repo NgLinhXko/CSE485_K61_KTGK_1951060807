@@ -85,7 +85,7 @@ if (isset($_POST['btnSave'])) {
         $_SESSION['update'] = "<div class='success'>User Updated Successfully.</div>";
         header("location:" . 'http://localhost:8080/CSE485_K61_KTGH_1951060807/CSE485_K61_KTGK_1951060807/manage-member.php');
     } else {
-        $_SESSION['update'] = "<div class='error'>Failed to Update User.</div>";
+        $_SESSION['error'] = "<div class='error'>Failed to Update User.</div>";
         header("location:" . 'http://localhost:8080/CSE485_K61_KTGH_1951060807/CSE485_K61_KTGK_1951060807/error.php');
     }
 }
