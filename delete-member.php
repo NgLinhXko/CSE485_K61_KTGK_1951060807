@@ -9,5 +9,5 @@ if ($res == true) {
     header("location:" . 'http://localhost:8080/CSE485_K61_KTGH_1951060807/CSE485_K61_KTGK_1951060807/manage-member.php');
 } else {
     $_SESSION['delete'] = "<div class='error'>Failed to Delete Admin. Try Again Later.</div>";
-    header("location:" . 'http://localhost:8080/CSE485_K61_KTGH_1951060807/CSE485_K61_KTGK_1951060807/manage-member.php');
+    header("location:" . 'http://localhost:8080/CSE485_K61_KTGH_1951060807/CSE485_K61_KTGK_1951060807/error.php');
 }
